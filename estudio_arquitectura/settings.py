@@ -10,15 +10,23 @@ REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 FEED_EXPORT_ENCODING = "utf-8"
 
 
-
+#PARA PLAWRIGHT
 DOWNLOAD_HANDLERS = {
     "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
-}
-
+    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",}
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-PLAYWRIGHT_LAUNCH_OPTIONS = {"headless": False} 
+PLAYWRIGHT_LAUNCH_OPTIONS = {"headless": True} 
 PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 100000
+
+# PARA cloudscraper!!
+DOWNLOADER_MIDDLEWARES = {            
+        'estudio_arquitectura.middlewares.CustomCloudflareMiddleware': 543,             
+      }
+
+
+
+
+
 
 
 #ver que cambié ROBOTSTXT_OBEY

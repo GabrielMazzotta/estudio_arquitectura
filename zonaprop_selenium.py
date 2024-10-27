@@ -20,3 +20,4 @@ links = WebDriverWait(driver, 60).until(EC.presence_of_all_elements_located((By.
 
 for i in range(len(links))[0:3]:
     print(links[i].text)
+
