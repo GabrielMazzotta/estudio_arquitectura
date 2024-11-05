@@ -1,6 +1,6 @@
 
 
-<p><img alt="image" src="img.JPG">
+<p><img alt="image" src="img.jpg">
 
 # Web Scraping for Real State Business
 
