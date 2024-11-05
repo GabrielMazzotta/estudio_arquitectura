@@ -6,7 +6,7 @@ from estudio_arquitectura.items import EstudioArquitecturaItem
 
 
 class ZonapropSpider(scrapy.Spider):
-    name = "zonaprop_free"
+    name = "zonaprop"
 
     page_count = 0
 
